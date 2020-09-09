@@ -1,0 +1,23 @@
+body {
+    background-image: url("_imagens/gray-ripple-4k-motion-background.jpg");
+    background-color: paleturquoise;
+  }
+  p {
+    text-align: justify;
+    text-indent: 55px;
+  }
+
+  h1 {
+    font-family: "Arial Narrow Bold";
+    font-size: 55pt;
+    color: blue;
+    text-shadow: 7px 8px 8px black;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: Helvetica;
+    font-size: 20pt;
+    color:blue;
+    text-shadow: 4px 4px 4px black;
+  }
