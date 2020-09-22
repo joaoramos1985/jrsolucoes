@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <input type="checkbox" title="🌙" id="MudarTema" />
+    <div class="conteudo">
     <meta charset="UTF-8" />
     <meta name="author" content="Joao Ramos" />
     <title>JR SOLUÇÕES</title>
     <link href="main.css" rel="stylesheet" />
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        height: 100vh;
+        margin: 0;
+      }
+      .conteudo {
+        padding: 10px;
+        height: 100%;
+        color: var(--corTexto);
+        background-color: var(--corFundo);
+      }
+      #MudarTema {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        -webkit-appearance: none;
+        outline: none;
+      }
+      #MudarTema::before {
+        content: attr(title);
+        font-size: 20px;
+      }
+
+      #MudarTema:checked + .conteudo {
+        --corTexto: white;
+        --corFundo: black;
+      }
+      #MudarTema:checked::before {
+        content: '🌞';
+      }
+    </style>
   </head>
+
   <body>
     <div id="interface">
       <header id="cabecalho">
@@ -73,6 +110,7 @@
             />
           </label>
           <label> E-mail: </label>
+
           <input type="email" name="E-mail" placeholder="E-mail do usuário" />
           <button type="submit">Próximo</button>
         </div>
@@ -80,10 +118,11 @@
     </form>
 
     <script></script>
-
-    <p style="text-align: center;">
+    
+    <p style="text-align: center">
       Copyright &copy; 2020 | JR SOLUÇOES CARTÃO DIGITAL- Cartão de Visita
       Digital Interativo - All Rights Reserved.
     </p>
+    </div>
   </body>
 </html>
