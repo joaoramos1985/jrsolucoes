@@ -1,130 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <input type="checkbox" title="🌙" id="MudarTema" />
-    <div class="conteudo">
-    <meta charset="UTF-8" />
-    <meta name="author" content="Joao Ramos" />
-    <title>JR SOLUÇÕES</title>
-    <link href="main.css" rel="stylesheet" />
-    <style>
-      *{
-        box-sizing: border-box;
-      }
-      body{
-        
-        height: 100vh;
-        margin: 0;
-      }
-      .conteudo {
-        padding: 20px;
-        height: 200%;
-        color: var(--corTexto);
-        background-color: var(--corFundo);
-        transition: 2.5s;
-      }
-      #MudarTema {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        -webkit-appearance: none;
-        outline: none;
-      }
-      #MudarTema::before {
-        content: attr(title);
-        font-size: 20px;
-      }
-
-      #MudarTema:checked + .conteudo {
-        --corTexto: white;
-        --corFundo: black;
-      }
-      #MudarTema:checked::before {
-        content: '🌞';
-      }
-    </style>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   </head>
-
   <body>
-    <div id="interface">
-      <header id="cabecalho">
-        <hgroup>
-          <img
-            src="logo_web.webp"
-            alt=""
-            style="width: 120px; height: 83px"
-          />
-          <h1>JR SOLUÇÕES</h1>
-        </hgroup>
+    <img src="logo.webp" width="150px" height="100px" />
+    <input title="🌙" id="MudarTema" type="checkbox" />
+    <div class="conteudo">
+      <meta name="author" content="Joao Ramos" />
+      <title>JR SOLUÇÕES</title>
+      <link href="main.css" rel="stylesheet" />
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+        body {
+          height: 100vh;
+          margin: 0;
+        }
+        .conteudo {
+          padding: 20px;
+          height: 200%;
+          color: var(--corTexto);
+          background-color: var(--corFundo);
+          transition: 1.5s;
+        }
+        #MudarTema {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          -webkit-appearance: none;
+          outline: none;
+        }
+        #MudarTema::before {
+          content: attr(title);
+          font-size: 20px;
+        }
 
-        <p style="text-align: right">
-          <b
-            >Menu Principal - Início - Como Funciona - Recursos - Preços -
-            Dúvidas - Sobre a JR SOLUÇÕES - Contato</b
-          >
+        #MudarTema:checked + .conteudo {
+          --corTexto: white;
+          --corFundo: black;
+        }
+        #MudarTema:checked::before {
+          content: "🌞";
+        }
+      </style>
+      <div id="interface">
+        <header id="cabecalho">
+          <hgroup>
+            <h1>JR SOLUÇÕES</h1>
+          </hgroup>
+          <p style="text-align: right"><b> </b></p>
+          <nav id="menu">
+            <b>
+              <h3>Menu Principal</h3>
+              <ul
+                style="left: 593px; width: 679px; top: -20px; height: 37px"
+                type="circle"
+              >
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html">Como Funciona</a></li>
+                <li><a href="index.html">Instagram</a></li>
+                <li><a href="index.html">Facebook</a></li>
+                <li><a href="index.html">Contato</a></li>
+              </ul>
+            </b>
+          </nav>
+          <b> </b>
+          <p></p>
+          <h2>Cartão de visita digital e interativo para empresas</h2>
+        </header>
+        <p style="text-align: justify">
+          <b>O Cartão Digital e Interativo</b> é fundamental para reunir todas
+          informações de sua empresa de forma simples e objetiva através de um
+          arquivo PDF personalizado.
+        </p>
+        <h2 style="text-align: left; text-indent: 0px">
+          O que é Cartão de visita digital e interativo?
+        </h2>
+        <p>
+          O cartão de vista evoluiu para o digital e agora você também pode
+          fazer parte desse novo mundo. Modernize seu negócio e se livre dos
+          cartões de visitas impressos e volumosos.
+        </p>
+        <p>
+          Com o cartão de visita digital você faz o envio ilimitado dos seus
+          contatos através do whatsApp ou de qualquer outro aplicativo de
+          mensagem, e se o seu cliente pode ser seu aliado compartilhando seu
+          cartão de visita com outras pessoas. O seu cliente chega até você com
+          apenas um clique.
+        </p>
+        <p>
+          Criar um cartão de visita digital e interativo é interessante para
+          divulgar informações de empresas ou marcas. Esse documento em PDF
+          contém links que direcionam quem recebe imediatamente para o site da
+          companhia, redes sociais ou para uma janela de conversa, abrangendo as
+          formas de comunicação com clientes.
         </p>
 
-        <h2>Cartão de visita digital e interativo para empresas</h2>
-      </header>
+        <h2 style="text-align: left; text-indent: 0px">Como funciona?</h2>
+        <p>
+          O cartão digital interativo tem como sua principal funcionalidade
+          facilitar na divulgação de sua empresa, pois o cartão é compartilhado
+          pelo whatsapp e também por e-mail, aumentando ainda mais a
+          visibilidade de sua empresa.
+        </p>
+        <p>
+          Ele tem a funcionalidade de um mini-site mobile, onde seu cliente terá
+          acesso as informações de sua empresa como: whatsApp, telefone, e-mail,
+          localização, facebook, instagram, linkedlin, entre outras redes
+          sociais e também a opção vá de Uber, tudo isso com apenas um simples
+          clique seu cliente será encaminhado até você.
+        </p>
 
-      <p style="text-align: justify">
-        <b>O Cartão Digital e Interativo</b> é fundamental para reunir todas
-        informações de sua empresa de forma simples e objetiva através de um
-        arquivo PDF personalizado.
-      </p>
+        <h2 style="text-align: left; text-indent: 0px">Assista</h2>
+        <video width="530" height="300" controls>
+          <source src="Vídeo.mp4" type="video/mp4" />
+        </video>
 
-      <h2 style="text-align: center; text-indent: 50px">
-        O que é Cartão de visita digital e interativo?
-      </h2>
-      <p>
-        O cartão de vista evoluiu para o digital e agora você também pode fazer
-        parte desse novo mundo. Modernize seu negócio e se livre dos cartões de
-        visitas impressos e volumosos.
-      </p>
-
-      <p>
-        Com o cartão de visita digital você faz o envio ilimitado dos seus
-        contatos através do whatsApp ou de qualquer outro aplicativo de
-        mensagem, e se o seu cliente pode ser seu aliado compartilhando seu
-        cartão de visita com outras pessoas. O seu cliente chega até você com
-        apenas um clique.
-      </p>
-
-      <p>
-        Criar um cartão de visita digital e interativo é interessante para
-        divulgar informações de empresas ou marcas. Esse documento em PDF contém
-        links que direcionam quem recebe imediatamente para o site da companhia,
-        redes sociais ou para uma janela de conversa, abrangendo as formas de
-        comunicação com clientes.
-      </p>
-    </div>
-    <form>
-      <div id="formulario">
-        <div class="form-group">
-          <label> Nome: </label>
-          <input type="text" name="nome[]" placeholder="Nome do comprador" />
-          <label>
-            Telefone:
-            <input
-              type="telefone"
-              name="telefone"
-              placeholder="Telefone para contato"
-            />
-          </label>
-          <label> E-mail: </label>
-
-          <input type="email" name="E-mail" placeholder="E-mail do usuário" />
-          <button type="submit">Próximo</button>
-        </div>
+        <h2 style="text-align: left; text-indent: 0px">Peça já o seu</h2>
       </div>
-    </form>
-
-    <script></script>
-    
-    <p style="text-align: center">
-      Copyright &copy; 2020 | JR SOLUÇOES CARTÃO DIGITAL- Cartão de Visita
-      Digital Interativo - All Rights Reserved.
-    </p>
+      <form>
+        <div id="formulario">
+          <div
+            class="form-group"
+            style="margin-left: 135px; height: 25px; margin-top: 20px"
+          >
+            <label> Nome: </label>
+            <input name="nome[]" placeholder="Nome do comprador" type="text" />
+          </div>
+          <div class="form-group" style="margin-left: 135px"><br /></div>
+          <div class="form-group" style="margin-left: 135px; height: 39px">
+            <label
+              >Telefone:
+              <input
+                name="telefone"
+                placeholder="Telefone para contato"
+                type="telefone"
+              />&nbsp;</label
+            >
+          </div>
+          <div class="form-group" style="margin-left: 135px; margin-top: -13px">
+            <label><br /> </label>
+          </div>
+          <div class="form-group" style="margin-left: 135px">
+            <label>E-mail: </label>
+            <input name="E-mail" placeholder="E-mail do usuário" type="email" />
+            <button type="submit">Próximo</button>
+          </div>
+        </div>
+      </form>
+      <script></script>
+      <p style="text-align: center; height: 39px; margin-top: 400">
+        Copyright © 2020 | JR SOLUÇOES CARTÃO DIGITAL- Cartão de Visita Digital
+        Interativo - All Rights Reserved.
+      </p>
     </div>
   </body>
 </html>

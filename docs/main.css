@@ -1,13 +1,22 @@
 body {
-    background-color: paleturquoise;
+  background-color: whitesmoke;
+  height: 100vh;
+  margin: 0;
 }
+    
+div#interface {
+  width: 1000px;
+  margin: 10px auto 0px auto;
+  padding: 10px;
+}
+
 p {
   text-align: justify;
   text-indent: 55px;
 }
 
 h1 {
-  font-family: "Arial Narrow Bold";
+  font-family: "Ari al Narrow Bold";
   font-size: 55pt;
   color: blue;
   text-shadow: 7px 8px 8px black;
@@ -19,4 +28,43 @@ h2 {
   font-size: 20pt;
   color: blue;
   text-shadow: 4px 4px 4px black;
+}
+
+/* Formatação do Menu */
+
+nav#menu {
+  display: block;
+}
+
+nav#menu ul {
+  list-style: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: -20px;
+  left: 700px;
+}
+
+nav#menu li {
+  display: inline-block;
+  background-color: #00AFEF;
+  padding: 10px;
+  margin: 2px;
+  transition: background-color 2s;
+}
+
+nav#menu li:hover {
+  background-color: rgb(17, 17, 167);
+}
+
+nav#menu h3 {
+  display: none;
+}
+
+nav#menu a {
+  color: #000000;
+  text-decoration: none;
+}
+nav#menu  a:hover {
+  color:#ffffff;
+  text-decoration: underline ;
 }
