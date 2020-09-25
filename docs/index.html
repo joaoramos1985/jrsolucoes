@@ -55,14 +55,12 @@
             <b>
               <h3>Menu Principal</h3>
               <ul
-                style="left: 593px; width: 679px; top: -20px; height: 37px"
+                style="left: 800; width: 679px; top: -20px; height: 37px"
                 type="circle"
               >
-                <li><a href="index.html">Início</a></li>
-                <li><a href="index.html">Como Funciona</a></li>
-                <li><a href="index.html">Instagram</a></li>
-                <li><a href="index.html">Facebook</a></li>
-                <li><a href="index.html">Contato</a></li>
+                <li><a href="https://www.instagram.com/cartoesdevisitasjrsolucoesti/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/jrsolucoesmidiadigital" target="_blank">Facebook</a></li>
+                <li><a href="mailto:joaoramosads@gmail.com" target="_blank">Contato</a></li>
               </ul>
             </b>
           </nav>
@@ -120,41 +118,49 @@
 
         <h2 style="text-align: left; text-indent: 0px">Peça já o seu</h2>
       </div>
-      <form>
-        <div id="formulario">
-          <div
-            class="form-group"
-            style="margin-left: 135px; height: 25px; margin-top: 20px"
-          >
-            <label> Nome: </label>
-            <input name="nome[]" placeholder="Nome do comprador" type="text" />
-          </div>
-          <div class="form-group" style="margin-left: 135px"><br /></div>
-          <div class="form-group" style="margin-left: 135px; height: 39px">
-            <label
-              >Telefone:
-              <input
-                name="telefone"
-                placeholder="Telefone para contato"
-                type="telefone"
-              />&nbsp;</label
-            >
-          </div>
-          <div class="form-group" style="margin-left: 135px; margin-top: -13px">
-            <label><br /> </label>
-          </div>
-          <div class="form-group" style="margin-left: 135px">
-            <label>E-mail: </label>
-            <input name="E-mail" placeholder="E-mail do usuário" type="email" />
-            <button type="submit">Próximo</button>
-          </div>
-        </div>
-      </form>
-      <script></script>
+
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" /> <br />
+      <p></p>
+      <label for="nome">Telefone</label>
+      <input type="text" name="telefone" id="telefone" /><br />
+      <p></p>
+      <label for="nome">Email</label>
+      <input type="text" name="e-mail" id="email" /><br />
+      <p></p>
+      <input type="submit" value="Enviar Dados" onclick="enviar()" />
+
+      <div
+        id="saida"
+        style="width: 100%; color: blue; font-size: 12px; margin-top: 30px"
+      ></div>
+
       <p style="text-align: center; height: 39px; margin-top: 400">
         Copyright © 2020 | JR SOLUÇOES CARTÃO DIGITAL- Cartão de Visita Digital
         Interativo - All Rights Reserved.
       </p>
     </div>
+    <script>
+      function enviar() {
+        var nome = document.getElementById("nome").value;
+        var telefone = document.getElementById("telefone").value;
+        var emmail = document.getElementById("email").value;
+        var saida = document.getElementById("saida");
+
+        saida.innerHTML = ` Nome: ${nome} <br> Telefone: ${telefone} <br> Email:${emmail}`;
+      }
+
+      /*        if(nome.length <3)
+          alert('Nome inválido')
+            else{
+              if(telefone <=7 || telefone >=12)
+              alert('Número de telefone inválido')
+              else{
+                if(email < 9)
+                alert('e-mail inválido')
+              }
+            }
+            */
+    </script>
   </body>
 </html>
