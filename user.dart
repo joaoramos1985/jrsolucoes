@@ -178,7 +178,7 @@ class NavDrawer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => TelaCadastrarPessoa(lista),
+                  builder: (context) => Sobre(),
                 ),
               );
             },
@@ -415,6 +415,31 @@ class _TelaBuscarPorPessoaState extends State<TelaBuscarPorPessoa> {
     );
   }
 }
+
+
+class Sobre extends StatefulWidget {
+  @override
+  _Sobre createState() => _Sobre();
+}
+
+class _Sobre extends State<Sobre> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Sobre o desenvolvedor")),
+       body: Column(
+          children: <Widget>[
+            Text("Joao Ramos"),
+            Text("35 anos, estudante de Análise e desenvolvimento de sistemas no Unisal - Campinas"),
+            Text("Disciplina: GTADS4AN - DESENVOLVIMENTO PARA DISPOSITIVO MÓVEL, WEB E GAME "),
+            Text("Professor: Eduardo Ono"),
+            
+          ],
+        ),
+    );
+  }
+}
+
 
 
 
